@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding of NUumbers</title>
+    <script>
+        function addnum(){
+var val1 = parseInt(document.getElementById("value1").value);
+var val2 = parseInt(document.getElementById("value2").value);
+var ansd = document.getElementById("answer");
+ansd.value =val1+val2;
+        }
+    </script>
+    <style>
+        #div1
+        {
+            margin-top: 10%;
+            margin-left: 40%;
+        }
+        #div2
+        {
+           margin-block-start: 15%;
+           margin-left: 35%;
+           margin-top: 5%;
+        }
+    </style>
+</head>
+<body bgcolor="cyan">
+    <h1 id="div2">ADDITION OF TWO NUMBERS</h1>
+    <div id="div1"> 
+        First number   :  <input type="text" name="values1" value="" id="value1">
+        <br><br>
+        Second number  :  <input type="text" name="value2" value="" id="value2">
+        <br><br><br>
+        <input type="button" value="ADDITION" name="SUM" onclick="addnum()">
+        <br><br>
+        Answer : <input type="=text" id="answer" name="answer" value="">
+        </div>
+</body>
+</html>
